@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+          .clockDesign {
+            background-color: black;
+            font-size: 80px;
+            color: #a309db;
+            border: 5px inset #5311b6;
+            height: 100px;
+            width: 30%;
+            padding: 0px auto;
+            text-align: center;
+            font-family: Impact, Arial, sans-serif;
+            letter-spacing: 3px;
+          }
+        </style>
+        <script language="JavaScript">
+          function clockBlock() {
+            let timeNow = new Date();
+            let hrs = timeNow.getHours();
+            let min = timeNow.getMinutes();
+            let sec = timeNow.getSeconds();
+            let amPm = "AM";
+            if (hrs == 0) {
+              hrs = 12;
+            }
+            if (hrs > 12) {
+              amPm = "PM";
+              hrs = hrs - 12;
+            }
+            if (hrs < 10) {
+              hrs = "0" + hrs;
+            }
+            if (min < 10) {
+              min = "0" + min;
+            }
+            if (sec < 10) {
+              sec = "0" + sec;
+            }
+            var printClock = document.getElementById('clockDisplay');
+            printClock.textContent = hrs + ":" + min + /*":"+sec+*/ " " + amPm;
+            printClock.innerText = hrs + ":" + min + /*":"+":"+sec+*/ " " + amPm;
+            setTimeout('clockBlock()', 1000);
+          }
+        </script>
+      </head>
+      <body onLoad="clockBlock()">
+        <div id="clockDisplay" class="clockDesign" dir="ltr"></div>
+      </body>
+      </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="../CSS/home1.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/login.js"></script>
+    <script src="../JS/home.js"></script>
+
+<style>
+ #div1{
+    width:100% ;
+    height: 100%;
+    background-image: url("../IMAGE/רקע\ סופי.png");
+    background-size:100% 100%;
+    animation:anim1 ease-in-out 10s infinite ;
+}
+@keyframes anim1 {
+    0%{
+        background-image: url("../IMAGE/רקע\ סופי.png"); 
+    }
+    50%{
+        background-image: url("../IMAGE/הפוך.png");
+    }
+    100%{
+        background-image: url("../IMAGE/רקע\ סופי.png"); 
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="prisa" id="div1">
+
+    <header>   
+        <center>
+        <img src="../IMAGE/lalalandבלי רקע.png" id="lala" height="6%" width="40%">
+        </center>
+    </header>
+<center>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <p class="text-danger">! ברוך הבא לאתר שלנו</p>
+            <p class="text-success">בכדי לשחק ולהנות מהאתר עליך להתחבר/להרשם</p>
+            <p class="text-primary">...לאחר מכן תכנס למערכת ותוכל לשחק</p>
+            <p class="text-warning bg-dark">בהצלחה ובהנאה, צוות להלה לנד</p>
+        </div>
+    </div>
+</center>
+
+    <aside>
+        <br/>
+        <center>
+        <div id="in">
+            <br/>
+            <input type="button" value="🔑למעבר להרשמה-לחץ כאן" id="neww" onclick="neww()"><br/><br/><br/><br/>
+            <div id="left"> <label class="fs-6">UserName</label><br/> </div>
+            <input type="text" id="myname" class="input"><br/><br/>
+            <div id="left"> <label class="fs-6">Password</label><br/> </div>
+            <input type="password" id="mypass" class="input"><br/><br/><br/><br/>         
+            <input type="button" value="log-in" id="log-in" onclick="login()"><br/>
+         </div>
+         
+        <div id="up">
+            <input type="button" value="🔑לחזרה להתחברות-לחץ כאן" id="old" onclick="old()"><br/><br/><br/><br/>
+            <div id="left">  <label class="fs-6">UserName</label> <br/></div>
+            <input type="text" id="name" class="input"><br/><br/>
+            <div id="left"> <label class="fs-6">Password</label><br/> </div>
+            <input type="password" id="code" class="input"><br/><br/>
+            <div id="left">  <label class="fs-6">Password again</label><br/> </div>
+            <input type="password" id="codea" class="input"><br/><br/><br/><br/>
+            <input type="button" value="sign-up" id="sign-up" onclick="signUp()"><br/>
+        </div>
+
+        <br/><br/> <br/>
+    </center>
+    </aside>
+
+    <div id="bthn" lang="en"></div>
+    <script>
+        (function () {
+           var script = document.createElement("script");
+           script.type = "text/javascript";
+           script.src = "https://bringthemhomenow.net/1.1.0/hostages-ticker.js";
+           script.setAttribute(
+             "integrity",
+             "sha384-DHuakkmS4DXvIW79Ttuqjvl95NepBRwfVGx6bmqBJVVwqsosq8hROrydHItKdsne"
+           );
+           script.setAttribute("crossorigin", "anonymous");
+           document.getElementsByTagName("head")[0].appendChild(script);
+         })();
+        </script>
+        
+  <footer>
+    <center>
+        <br/>
+        lalaland-כל הזכויות שמורות
+        <span>&copy;</span>
+    </center>
+  </footer>
+</div>
+
+<script>
+    var glassixWidgetOptions = {"numbers":[{"number":"972583269097","name": " התחלת שיחה חדשה","subtitle":"נשמח לעמוד לשירותכם - lala land"}],"left":false,"ltr":false,"popupText":"","title":"שלום 👋","subTitle":"נשמח לסייע בכל נושא"};
+    !function (t) { var e = function () { window.requirejs && !window.whatsAppWidgetClient && (requirejs.config({ paths: { GlassixWhatsAppWidgetClient: "https://cdn.glassix.com/clients/whatsapp.widget.1.2.min.js" } }), require(["GlassixWhatsAppWidgetClient"], function (t) { window.whatsAppWidgetClient = new t(window.glassixWidgetOptions), whatsAppWidgetClient.attach() })), window.GlassixWhatsAppWidgetClient && "function" == typeof window.GlassixWhatsAppWidgetClient ? (window.whatsAppWidgetClient = new GlassixWhatsAppWidgetClient(t), whatsAppWidgetClient.attach()) : i() }, i = function () { a.onload = e, a.src = "https://cdn.glassix.net/clients/whatsapp.widget.1.2.min.js", s && s.parentElement && s.parentElement.removeChild(s), n.parentNode.insertBefore(a, n) }, n = document.getElementsByTagName("script")[0], s = document.createElement("script"); s.async = !0, s.type = "text/javascript", s.crossorigin = "anonymous", s.id = "glassix-whatsapp-widget-script"; var a = s.cloneNode(); s.onload = e, s.src = "https://cdn.glassix.com/clients/whatsapp.widget.1.2.min.js", !document.getElementById(s.id) && document.body && (n.parentNode.insertBefore(s, n), s.onerror = i) }(glassixWidgetOptions);
+    </script>
+
+    
+        
+</body>
+</html>

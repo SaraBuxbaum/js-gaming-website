@@ -1,0 +1,73 @@
+body{
+    background-image: url(../IMAGE/רקע\ צהוב\ למשחק\ איקס\ עיגול.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+h2{
+    font-size: 2em;
+    color: #010000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+h3{
+    font-size: 1em;
+    color: #010000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;  
+}
+#btn{
+    margin-top: 20px;
+    padding: 12px 24px; /*פדינג מוגדל לכפתורים*/
+    font-size: 16px;
+    background-color: #ebedc3; /* צבע רקע לכפתור */
+    color: rgba(0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* אנימציית מעבר חלקה */
+}
+
+/* עיצוב לריחוף על הכפתור */
+#btn:hover {
+    background-color: #9fa43d; /* צבע רקע לריחוף */
+    color: rgba(255,255,255);
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}
+/* #game{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+p{
+    font-size: 1em;
+    color: #010000;
+    letter-spacing: 0.05em;
+}
+button{
+    font-size: 0.2em;
+    color: #010000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#game{
+    width: 700px;
+    height: 484px;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+#container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border-color:c6ca7cdf ;
+    border-radius: 8%;
+    background: #c6ca7cdf;
+    width: auto;
+    padding: 10px 30px;
+}

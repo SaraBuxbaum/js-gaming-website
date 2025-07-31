@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/login.js"></script>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+
+    <title>signUp</title>
+</head>
+<body class="signup">
+    <header>   
+        <center>
+        <img src="../IMAGE/lalalandבלי רקע.png" id="lala" height="110" width="600">
+        </center>
+</header>
+    <center>
+    <h1 class="p1">טופס הרשמה</h1>
+    <input type="text" placeholder="שם משתמש" id="name" class="input" />
+    <br/>
+    <br/>
+    <input type="text" placeholder="תעודת זהות" minlength="9" maxlength="10"  id="id" class="input"/>
+    <br/>  
+    <br/>
+    <input type="text" placeholder="מספר טלפון" minlength="9" maxlength="10"   id="fone" class="input"/>
+    <br/>
+    <br/>
+    <input type="email" placeholder="מייל " id="mail" class="input"/>
+    <br/>
+    <br/> 
+   
+    <label >זכר</label>
+    <input type="radio" name="radio1" value="זכר"><br/>
+   
+    <label>נקבה</label>
+    <input type="radio" name="radio1" value="נקבה">
+    <br/>
+    <br/> 
+    <label>תאריך לידה</label><br/>
+    <input type="date" id="age" class="input"/>
+    <br/>
+    <br/>
+    <input type="password" placeholder="בחר סיסמא"  id="code" class="input"/>
+    <br/>
+    <br/>
+    <input type="password" placeholder="שחזור סיסמא"  id="code" class="input"/>
+    <br/>
+    <br/>
+    <label>הריני מאשר שפרטיי האישיים ישמרו במערכת לצורך נתוני סטטיסטיקה בלבד</label>&nbsp;
+    <input type="checkbox" >
+    <br/>
+    <br/>
+    <input type="button" value="Sign" onclick="sign()" class="input"/>
+</center>
+</body>
+</html>

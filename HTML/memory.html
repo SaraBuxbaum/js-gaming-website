@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/games.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/xo2.css">
+    <script src="../JS/login.js"></script>
+    <script src="../JS/popup.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="leftName"> 
+            <button class="fs-6" id="thisuser" onclick="curr()"></button>
+        
+            <div id="popupName">
+                <span id="cancelButton" class="close" onclick="cancle()">&times;</span>
+                <div class="popup-content"> <p class="fs-6">?האם ברצונך להתנתק</p>
+                <button id="logoutButton" onclick="logout()">התנתקות</button>
+                </div>
+            </div> 
+        </div>
+        <center>
+    <a href="menu.html"><img src="../IMAGE/lalalandבלי רקע.png"  id="heding"  height="4%" width="30%"></a>
+    </center>
+    </header>
+
+    <div class="container">
+        <center>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="first"><center><br/>
+        <a href="memorysara.html" ><img src="../IMAGE/משחק זכרון.png" ></a> <br/><br/><br/>
+        <div id="pas"></div><br/><br/>
+        <a href="memorysara.html" class="link-offset-2 link-underline link-underline-opacity-0"><p id="m" class="fs-4 fw-bold">8 pairs-low level</p></a>
+        </center></div>
+
+        <div class="first"><center><br/>
+         <a href="memoryHard.html"><img src="../IMAGE/משחק זכרון.png" ></a><br/><br/><br/>
+         <div id="pas"></div><br/><br/>
+         <a href="memoryHard.html" class="link-offset-2 link-underline link-underline-opacity-0"><p id="m" class="fs-4 fw-bold">18 pairs-high level</p></a>
+        </center>   </div></center>
+    </div>
+
+</body>
+</html>

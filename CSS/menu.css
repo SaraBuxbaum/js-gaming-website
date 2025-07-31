@@ -1,0 +1,77 @@
+#menu{
+    width: 30%;
+    height: 30%;
+}
+
+#menu:hover{
+    transition: 10s all;
+    transform: rotate(360deg);
+}
+
+body{
+    background-image: url(../IMAGE/רקע\ סופי.png);
+    /* background-color: black; */
+    color: black;
+    lighting-color: black;
+    
+}
+
+#divi{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: black;
+}
+#piano{
+    font-size: 180%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 40%;
+    border-bottom-color: blue;
+    border-top-color: rgb(238, 255, 0);
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(0, 255, 85);
+    height: auto;
+    width: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#piano:hover{
+    display: non;
+    background-color: rgb(240, 225, 225);
+    color: rgb(255, 0, 0);
+}
+
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input{
+    color: black;
+    border-color: rgb(255, 255, 255);
+    font-size: 0.65em; /* הגדרה רספונסיבית של גודל הפונט */
+    padding: 1px 1px; /* מרווח פנימי כדי לשמור על הטקסט */
+    border-radius: 5px; /* שינוי לרדיוס קצת יותר רך */
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    white-space: nowrap; /*מניעת חיתוך המילים */
+    width: auto; /* הגדרת רוחב אוטומטי בהתאם לתוכן */
+    display: inline-block; /*שמירת רוחב בהתאם לתוכן*/
+    box-sizing: border-box; /*התחשבות ברוחב של ה-padding בתוך הרוחב הכולל*/
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* 
+#gameDirection
+{
+    position: absolute;
+    right: 8px;
+    margin-right: 8px;
+    direction: rtl;
+}
+
+#discribeGame
+{
+    direction: rtl;
+    position: absolute;
+    right: 20px;
+} */

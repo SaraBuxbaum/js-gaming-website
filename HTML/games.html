@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>games</title>
+    <script src="../JS/games.js"></script>
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/games.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/popup.css">
+    <script src="../JS/login.js"></script>
+    <script src="../JS/popup.js"></script>
+
+</head>
+<body >
+    <header>
+        <div id="leftName"> 
+            <button class="fs-6" id="thisuser" onclick="curr()"></button>
+        
+            <div id="popupName">
+                <span id="cancelButton" class="close" onclick="cancle()">&times;</span>
+                <div class="popup-content"> <p class="fs-6">?האם ברצונך להתנתק</p>
+                <button id="logoutButton" onclick="logout()">התנתקות</button>
+                </div>
+            </div> 
+        </div>
+        <center>
+    <a href="menu.html"><img src="../IMAGE/lalalandבלי רקע.png"  id="heding"  height="4%" width="30%"></a>
+    <p class="fs-4" id="myp"></p>
+    </center>
+</header>
+
+    <aside id="aside">
+        <br/>
+        <div class="container">
+            <div class="first"><center><br/>
+            <a href="bool.html" ><img src="../IMAGE/בול פגיעה.png" ></a> <br/><br/><br/>
+            <div id="pas"></div><br/><br/>
+            <a href="bool.html" class="link-offset-2 link-underline link-underline-opacity-0"><p id="b" class="fs-4 fw-bold">בול פגיעה</p></a>
+            </center></div>
+
+            <div class="first"><center><br/>
+             <a href="memory.html"><img src="../IMAGE/משחק זכרון.png" ></a><br/><br/><br/>
+             <div id="pas"></div><br/><br/>
+             <a href="memory.html" class="link-offset-2 link-underline link-underline-opacity-0"><p id="m" class="fs-4 fw-bold">משחק זיכרון</p></a>
+            </center>   </div>
+
+         <div class="first"><center><br/>
+             <a href="snake.html" ><img src="../IMAGE/נחש.png" ></a><br/><br/><br/>
+             <div id="pas"></div><br/><br/>
+             <a href="snake.html" class="link-offset-2 link-underline link-underline-opacity-0"><p id="s" class="fs-4 fw-bold">סנייק הקלאסי</p></a>
+            </center> </div>
+
+            <div class="first"><center><br/>
+             <a href="game_xo.html" ><img src="../IMAGE/איקס עיגול.png" ></a><br/><br/><br/>
+             <div id="pas"></div><br/><br/>
+             <a href="game_xo.html" class="link-offset-2 link-underline link-underline-opacity-0"><p id="x" class="fs-4 fw-bold">איקס עיגול</p></a>
+            </center> </div>
+        </div>
+      
+    </aside>
+   <br/><br/>    <br/><br/>    <br/><br/> 
+
+    <footer>
+        <center>
+            <input type="button" value="ליצירת קשר/משוב" onclick="conect()" class="footerCon">&nbsp;&nbsp;       
+            lalaland-כל הזכויות שמורות
+            <span>&copy;</span>
+    </center>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+}
+
+h1{
+  font-size: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input{
+  height: 15px;
+  width: 20px;
+}
+
+/*
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* כיסוי גובה מלא של המסך 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#ffffff, #de7171, #ef2121, #000000f8);
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  width: 90%; /* רוחב כולל של הפסנתר 
+  max-width: 800px; /* מגבלת רוחב מקסימלית 
+  height: auto;
+  justify-content: center;
+}
+
+.white-key {
+  width: 9%; /* רוחב של קלידים לבנים 
+  height: 60vh; /* גובה יחסי לרוחב 
+  background-color: #FFF;
+  border: 0.4% solid black; /* יחס גבול רספונסיבי 
+  border-radius: 0 0 2% 2%;
+  margin: 0 0.2%; /* מרווח בין הקלידים 
+  outline: none;
+  cursor: pointer;
+}
+
+.white-key.active {
+  background-color: #C0C0C0;
+}
+
+.black-key {
+  position: absolute;
+  width: 6.5%;  /*רוחב של קלידים שחורים 
+  height: 34vh;  /*גובה רספונסיבי של הקלידים השחורים 
+  background-image: linear-gradient(#000000, #414040);
+  border: 0.3% solid black;  /*יחס גבול רספונסיבי 
+  border-radius: 0 0 2% 2%;
+  outline: none;
+  cursor: pointer;
+}
+
+.black-key.active {
+  background-image: linear-gradient(#000000, #7e7e7e);
+}
+
+.Db4-key { 
+  left: 6%; 
+}
+
+.Eb4-key {
+  left: 16%;
+}
+
+.Gb4-key {
+  left: 36%;
+}
+
+.Ab4-key {
+  left: 46%;
+}
+
+.Bb4-key {
+  left: 56%;
+}
+
+.Db5-key {
+  left: 76%;
+}
+
+.Eb5-key {
+  left: 86.5%;
+}
+*/
+
+/* input{
+  height: 15%;
+  width: 20%;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#ffffff,#de7171,#ef2121, #000000f8);
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  margin-left: 4px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.white-key {
+  width: 100px; 
+  height: 500px;
+  background-color: #FFF;
+  border: 4px solid black;
+  border-radius: 0 0 9px 9px;
+  margin-left: -4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.white-key.active {
+  background-color: #C0C0C0;
+}
+
+.black-key {
+  position: absolute;
+  width: 75px; 
+  height: 280px;
+  background-image: linear-gradient(#000000, #414040);
+  border: 3px solid black;
+  border-radius: 0 0 8px 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.black-key.active {
+  background-image: linear-gradient(#000000, #7e7e7e);
+}
+
+
+.Db4-key { 
+  left: 6%; 
+}
+
+.Eb4-key {
+  left: 16%;
+}
+
+.Gb4-key {
+  left: 36%;
+}
+
+.Ab4-key {
+  left: 46%;
+}
+
+.Bb4-key {
+  left: 56%;
+}
+
+.Db5-key {
+  left: 76%;
+}
+
+.Eb5-key {
+  left: 86.5%;
+}
+
+
+@media (max-width:1005px)
+{
+   
+  .white-key {
+    width: 50px; 
+    height: 300px;
+    background-color: #FFF;
+    border: 4px solid black;
+    border-radius: 0 0 9px 9px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+  }
+ 
+  
+  .black-key {
+    position: absolute;
+    width: 60px; 
+    height: 180px;
+    background-image: linear-gradient(#000000, #414040);
+    border: 3px solid black;
+    border-radius: 0 0 8px 6px;
+    outline: none;
+    cursor: pointer;
+  } 
+}
+
+
+@media (max-width:800px)
+{
+   
+  .white-key {
+    width: 49px; 
+    height: 200px;
+    background-color: #FFF;
+    border: 4px solid black;
+    border-radius: 0 0 9px 9px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .black-key {
+    position: absolute;
+    width: 35px; 
+    height: 112px;
+    background-image: linear-gradient(#000000, #414040);
+    border: 3px solid black;
+    border-radius: 0 0 8px 6px;
+    outline: none;
+    cursor: pointer;
+  }
+
+}

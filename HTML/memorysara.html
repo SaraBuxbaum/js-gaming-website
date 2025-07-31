@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק זיכרון</title>
+    <link rel="stylesheet" href="../CSS/memorysara.css">
+    <script src="../JS/memorysara.js" defer></script>
+    <script src="../JS/menu.js"></script>
+    <link rel="stylesheet" href="../CSS/popup.css">
+    <script src="../JS/login.js"></script>
+    <script src="../JS/popup.js"></script>
+
+</head>
+<body>
+    <div id="leftName"> 
+        <button class="fs-5" id="thisuser" onclick="curr()"></button>
+    
+    <div id="popupName">
+        <div class="popup-content"> <p class="fs-6">?האם ברצונך להתנתק</p>
+         <button id="logoutButton" onclick="logout()">התנתקות</button>
+         <span id="cancelButton" class="close" onclick="cancle()">&times;</span>
+     </div></div> </div>
+  <center>
+        <a href="menu.html"><img src="../IMAGE/lalalandבלי רקע.png" height="60" width="270"></a>
+        <br/>
+        <p class="fs-4" id="myp"></p>
+    </center>
+
+    
+    <br/>
+    <div id="bigDiv">
+        <br/><br/><br/>
+    <!-- אזור המשחק -->
+    <main class="container">
+        <!-- לוח המשחק -->
+        
+         <h1>Memory-Game</h1>
+        <div id="game-board">
+            
+            <!-- כאן יהיו כל הקלפים -->
+        </div>
+<br/><br/>
+        <!-- מונה הנסיונות הכושלים -->
+        <p id="fail-counter-container">
+            score: <span id="fail-counter">0</span>
+        </p>
+
+        <!-- כפתור להתחלת משחק חדש -->
+        <button id="start-button">New Game</button>
+    </main>
+</div>
+
+
+</body>
+</html>

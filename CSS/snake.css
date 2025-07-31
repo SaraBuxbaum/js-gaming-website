@@ -1,0 +1,85 @@
+/* איפוס עיצוב בסיסי לכל האלמנטים */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* עיצוב גוף הדף */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50; /* צבע רקע כהה */
+    padding: 20px; /* פדינג מסביב לתוכן */
+}
+
+/* קונטיינר מרכזי */
+.container {
+    text-align: center;
+    color: #ecf0f1;
+    max-width: 600px; /* רוחב מקסימלי לקונטיינר */
+    width: 100%; /* שימוש מלא ברוחב המסך */
+    padding: 20px;
+    background-color: #34495e; /* צבע רקע לקונטיינר */
+    border-radius: 10px; /* פינות מעוגלות לקונטיינר */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הוספת צל קטן לקונטיינר */
+}
+
+/* עיצוב כותרת */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* גודל פונט גדול יותר לכותרת */
+    color: #ecf0f1; /* צבע טקסט */
+}
+
+/* עיצוב קנבס */
+canvas {
+    border: 2px solid #ecf0f1;
+    background-color: #2c3e50; /* צבע רקע לקנבס */
+    border-radius: 5px; /* פינות מעוגלות לקנבס */
+}
+
+/* עיצוב ניקוד */
+.score {
+    margin-top: 10px;
+    font-size: 1.2em; /* גודל פונט מוגדל לניקוד */
+}
+
+/* עיצוב כפתורים */
+button {
+    margin-top: 20px;
+    padding: 12px 24px; /* פדינג מוגדל לכפתורים */
+    font-size: 16px;
+    background-color: #587897; /* צבע רקע לכפתור */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* אנימציית מעבר חלקה */
+}
+
+/* עיצוב לריחוף על הכפתור */
+button:hover {
+    background-color:#223242; /* צבע רקע לריחוף */
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}
+
+/* עיצוב לתצוגה בניידים */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* גודל כותרת קטן יותר לניידים */
+    }
+
+    .container {
+        padding: 15px; /* פדינג קטן יותר בניידים */
+    }
+
+    button {
+        font-size: 14px; /* גודל פונט קטן יותר לכפתור בניידים */
+        padding: 10px 20px; /* פדינג קטן יותר בניידים */
+    }
+}

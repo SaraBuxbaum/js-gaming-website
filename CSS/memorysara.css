@@ -1,0 +1,107 @@
+/* עיצוב גוף הדף */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:rgb(210, 236, 210); 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.con{
+    background: green; 
+    width: 530px;
+    border-color: green;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/* יישור האלמנטים להתחלה כדי להקטין רווחים*/
+    align-items: center;
+    gap: 5px; /* רווח קטן בין האלמנטים */
+    padding: 10px 20px; /* הקטנת המרווחים הפנימיים */
+    height: 10vh; /*התאמה לגובה חלון הדפדפן */
+    box-sizing: border-box; /* הכללת border ו-padding בחישוב גובה האלמנט */
+    background: rgb(181, 247, 181); 
+    border-color: rgb(7, 95, 7);
+    border-radius: 8%;
+    height: 550px; 
+    width: 590px;
+}
+
+/* עיצוב הכותרת */
+h1 {
+    font-size: 2em; /*  גודל הפונט */
+    color: #fff;
+    text-transform: uppercase; /*מעבר לאותיות גדולות*/
+    letter-spacing: 0.1em;
+    margin: 0; /* ביטול רווחים חיצוניים */
+}
+
+/* עיצוב מונה הנסיונות הכושלים */
+p {
+    font-size: 20px; /*  גודל הפונט */
+    color: #2e7d32;
+    margin:  0; /* רווח עליון ותחתון קטן יותר */
+}
+
+/* עיצוב לוח המשחק */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 עמודות ברוחב יחסי */
+    grid-gap: 5px; /* רווח קטן בין הקלפים */
+    justify-content: center;
+    margin-top: 10px; /* רווח קטן בין הלוח לכותרת */
+    margin-bottom: 10px;
+    max-width: 90%; /* התאמה לרוחב המסך */
+}
+#bigDiv
+{
+    display: flex; 
+    justify-content: center;
+}
+
+/* עיצוב הקלפים */
+.card {
+    width: 110px; /*  רוחב הקלף */
+    height: 110px; /*  גובה הקלף */
+    background-color: #d2ecd3;
+    border: 1px solid #067f0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    position: relative; /* ליצירת אפקטים */
+}
+
+/* התאמה למיקום התוכן במרכז הקלף */
+.card > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* עיצוב כפתור התחלת המשחק החדש */
+button {
+    background-color: #89d889;
+
+    border-color: #4ec052;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #70b373;
+}

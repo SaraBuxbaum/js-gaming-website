@@ -1,0 +1,86 @@
+body{
+    background-image: url(../IMAGE/רקע\ סופי.png);
+    position: relative;
+}
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+    text-align: center;
+}
+
+#log-in{
+    background-color: white;
+    border-radius: 30%;
+}
+#sign-up{
+    background-color: white;
+    border-radius: 30%;
+}
+#lala{
+    direction: ltr;
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+h4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input{
+    color: rgb(8, 3, 3);
+    border-color: white;
+    font-size: 1.2em; /* הגדרה רספונסיבית של גודל הפונט */
+    padding: 5px 5px; /* מרווח פנימי כדי לשמור על הטקסט */
+    border-radius: 10px; /* שינוי לרדיוס קצת יותר רך */
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     white-space: nowrap; /*מניעת חיתוך המילים */
+    width: auto; /* הגדרת רוחב אוטומטי בהתאם לתוכן */
+    display: inline-block; /*שמירת רוחב בהתאם לתוכן*/
+    box-sizing: border-box; /*התחשבות ברוחב של ה-padding בתוך הרוחב הכולל*/
+}
+.footerCon
+{
+    color: rgb(8, 3, 3);
+    border-color: white;
+    font-size: 1em; /* הגדרה רספונסיבית של גודל הפונט */
+    padding: 2px 2px; /* מרווח פנימי כדי לשמור על הטקסט */
+    border-radius: 4px; /* שינוי לרדיוס קצת יותר רך */
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    white-space: nowrap; /*מניעת חיתוך המילים */
+    width: auto; /* הגדרת רוחב אוטומטי בהתאם לתוכן */
+    display: inline-block; /*שמירת רוחב בהתאם לתוכן*/
+    box-sizing: border-box; /*התחשבות ברוחב של ה-padding בתוך הרוחב הכולל*/
+}
+
+footer{
+    grid-area: footer;
+    position: absolute;
+    bottom: 10px; 
+    width: 100%; 
+    /* text-align: center; */
+}
+
+#username:hover{
+    background-color: rgba(255, 255, 255, 0.744);
+} 
+p{
+    height: 50%;
+    width: 60%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signup{
+    background-image: url(../IMAGE/רקע\ סופי.png);
+}
+.prisa{
+    display: grid;
+    grid-template-areas: "header" "aside" " footer";
+    grid-template-rows: "30% 60% 10%";
+    grid-template-columns: "100%";
+}
+
