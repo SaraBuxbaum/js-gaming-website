@@ -8,7 +8,7 @@ This is a simple and fun static website that showcases a variety of JavaScript g
 
 - No frameworks or libraries used — pure HTML/CSS/JS
 - Includes custom images and audio files
-- Works offline — just open `index.html` in your browser
+- Works offline — just open `home.html` in your browser
 
 ## 🚀 How to Run
 
