@@ -1,6 +1,6 @@
 # 🎮 JS Gaming Website
 
-Welcome to **JS Gaming Website** — a browser-based mini game collection built with pure **HTML, CSS, and JavaScript and Bootstrap**.
+Welcome to **JS Gaming Website** — a browser-based mini game collection built with pure **HTML, CSS, JavaScript and Bootstrap**.
 
 ## 🕹️ About the Project
 
